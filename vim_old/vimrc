@@ -1,0 +1,21 @@
+set t_Co=256
+
+set number
+syntax on
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set hlsearch
+set bg=dark
+set cursorline
+:hi CursorLine   cterm=NONE ctermbg=darkblue ctermfg=white guibg=darkblue guifg=white
+:hi CursorColumn cterm=NONE ctermbg=darkblue ctermfg=white guibg=darkblue guifg=white
+:nnoremap \c :set cursorline! cursorcolumn!
+:filetype plugin on
+
+set tags=./tags;/
+colorscheme darkblue
+
+call pathogen#infect()
+call pathogen#helptags()
