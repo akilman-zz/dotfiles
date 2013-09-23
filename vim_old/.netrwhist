@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/akilman/Work/alt-codebase/automation/thirdparty/appagent/conf/logging'
-let g:netrw_dirhist_2='/Users/akilman/Documents/Jira/current/netflix/agent-runtime/logs/originating-node'
-let g:netrw_dirhist_3='/Users/akilman/Work/codebase/automation/functional/build/logs/logs/target1_Node2'
-let g:netrw_dirhist_4='/Users/akilman/.android/avd/MyAvd0.avd'
