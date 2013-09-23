@@ -5,6 +5,8 @@ autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=
 autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bundle/closetag/plugin/closetag.vim
 
 set background=dark
+
+"solarized color scheme config
 let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 let g:solarized_contrast="high"
@@ -12,6 +14,17 @@ let g:solarized_visibility="high"
 colorscheme solarized
 
 syntax on
+filetype plugin on
+set number
+set t_Co=256
+
+"powerline related updates
+set encoding=utf-8
+set laststatus=2
+
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
 
 set rtp+={/Users/akilman/dotfiles/vim/bundle/powerline}/powerline/bindings/vim
 
@@ -21,3 +34,4 @@ if has("gui_running")
       set guifont=Droid\ Sans\ Mono\ for\ Powerline
    endif
 endif
+
