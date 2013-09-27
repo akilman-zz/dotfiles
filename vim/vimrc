@@ -17,6 +17,8 @@ syntax on
 filetype plugin on
 set number
 set t_Co=256
+set hlsearch
+set cursorline
 
 "powerline related updates
 set encoding=utf-8
