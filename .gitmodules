@@ -25,3 +25,9 @@
 [submodule "vim/bundle/powerline"]
 	path = vim/bundle/powerline
 	url = https://github.com/Lokaltog/powerline
+[submodule "emacs/powerline"]
+	path = emacs/powerline
+	url = https://github.com/jonathanchu/emacs-powerline
+[submodule "emacs/solarized"]
+	path = emacs/solarized
+	url = https://github.com/sellout/emacs-color-theme-solarized
