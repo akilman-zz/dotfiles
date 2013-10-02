@@ -13,6 +13,9 @@ let g:solarized_contrast="high"
 let g:solarized_visibility="high"
 colorscheme solarized
 
+"command t config
+let g:CommandTMaxFiles=50000
+
 syntax on
 filetype plugin on
 set number
