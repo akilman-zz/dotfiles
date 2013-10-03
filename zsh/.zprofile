@@ -23,4 +23,7 @@ alias lc='tree -L 2'
 alias splitd='tmux split-window -d' 
 alias splith='tmux split-window -h' 
 
+# emacs related
+alias emacs='emacs -nw'
+
 source ~/.host-specific-config.zsh
