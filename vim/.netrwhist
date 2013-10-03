@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/akilman/dotfiles/vim/bundle/command-t'
-let g:netrw_dirhist_2='/Users/akilman/dotfiles/.git'
-let g:netrw_dirhist_3='/Users/akilman/dotfiles/vim/bundle/powerline/powerline/bindings/vim/plugin'
-let g:netrw_dirhist_4='/Users/akilman/dotfiles/vim'
