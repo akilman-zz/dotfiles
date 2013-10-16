@@ -27,3 +27,9 @@ alias splith='tmux split-window -h'
 alias emacs='emacs -nw'
 
 source ~/.host-specific-config.zsh
+
+if [[ -n ${INSIDE_EMACS} ]]; then
+    # This shell runs inside an Emacs *shell*/*term* buffer.
+         prompt walters
+             unsetopt zle
+             fi

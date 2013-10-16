@@ -9,3 +9,6 @@
 ;; switches for auto-complete
 (require 'auto-complete-config)
 (ac-config-default)
+
+(require 'multi-term)
+(setq multi-term-program "/bin/zsh")
