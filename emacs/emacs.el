@@ -12,3 +12,6 @@
 
 (require 'multi-term)
 (setq multi-term-program "/bin/zsh")
+
+(require 'smart-tab)
+(global-smart-tab-mode 1)
