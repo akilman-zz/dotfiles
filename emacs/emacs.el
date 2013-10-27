@@ -6,6 +6,25 @@
       "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
+;; useful tidbit from clojure-doc.org, install packages if not present
+;; to facilitate portability across machines
+(defvar my-packages '(starter-kit
+		      starter-kit-lisp
+		      starter-kit-bindings
+		      starter-kit-eshell
+		      clojure-mode
+		      clojure-test-mode
+		      nrepl
+		      multi-term
+		      smart-tab
+		      color-theme
+		      fill-column-indicator
+		      linum))
+
+(dolist (p my-packages)
+  (when (not (package-installed-p p))
+    (package-install p)))
+
 ;; switches for auto-complete
 (require 'auto-complete-config)
 (ac-config-default)
