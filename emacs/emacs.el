@@ -20,13 +20,10 @@
 
 (require 'fill-column-indicator)
 (setq fci-rule-column 90)
-(setq fci-rule-color darkblue)
 
 ;; load path configuration
 (add-to-list 'load-path "~/dotfiles/emacs/markdown-mode")
 
-;; use standard copy-paste keyboard combinations
-(cua-mode 1)
 (column-number-mode 1)
 
 ;; auto-insert brackers in pairs
