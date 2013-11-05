@@ -1,29 +1,9 @@
-
-;; marmalade package repo
 (require 'package)
-(add-to-list 'package-archives 
-    '("marmalade" .
-      "http://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
-
-;; useful tidbit from clojure-doc.org, install packages if not present
-;; to facilitate portability across machines
-(defvar my-packages '(starter-kit
-		      starter-kit-lisp
-		      starter-kit-bindings
-		      starter-kit-eshell
-		      clojure-mode
-		      clojure-test-mode
-		      nrepl
-		      multi-term
-		      smart-tab
-		      color-theme
-		      fill-column-indicator
-		      linum))
-
-(dolist (p my-packages)
-  (when (not (package-installed-p p))
-    (package-install p)))
+(unless (package-installed-p 'scala-mode2)
+  (package-refresh-contents) (package-install 'scala-mode2))
 
 ;; switches for auto-complete
 (require 'auto-complete-config)
@@ -60,3 +40,13 @@
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+;; load the ensime lisp code...
+(add-to-list 'load-path "/opt/ensime_2.10.0-RC3-0.9.8.2/elisp/")
+(require 'ensime)
+
+;; This step causes the ensime-mode to be started whenever
+;; scala-mode is started for a buffer. You may have to customize this
+;; step
+;; if you're not using the standard scala mode.
+(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
