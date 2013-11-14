@@ -28,6 +28,10 @@ filetype plugin on
 set encoding=utf-8
 set laststatus=2
 
+"xmledit
+let g:xml_syntax_folding=1
+au FileType xml setlocal foldmethod=syntax
+
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
 python del powerline_setup
