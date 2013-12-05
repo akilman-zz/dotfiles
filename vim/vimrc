@@ -32,16 +32,18 @@ set laststatus=2
 let g:xml_syntax_folding=1
 au FileType xml setlocal foldmethod=syntax
 
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+if has("unix")
+  let s:uname = system("uname")
+  if s:uname == "Darwin\n"
+    
+    "powerline (only have it working for Mac so far)
+    python from powerline.vim import setup as powerline_setup
+    python powerline_setup()
+    python del powerline_setup
 
-set rtp+={/Users/akilman/dotfiles/vim/bundle/powerline}/powerline/bindings/vim
+    set rtp+={/Users/akilman/dotfiles/vim/bundle/powerline}/powerline/bindings/vim
 
-if has("gui_running")
-   let s:uname = system("uname")
-   if s:uname == "Darwin\n"
-      set guifont=Droid\ Sans\ Mono\ for\ Powerline
-   endif
+    set guifont=Droid\ Sans\ Mono\ for\ Powerline
+  endif
 endif
 
