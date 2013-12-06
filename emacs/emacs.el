@@ -50,3 +50,8 @@
 ;; step
 ;; if you're not using the standard scala mode.
 (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
+
+;; set color of the current line
+(global-hl-line-mode 1)
+(set-face-background 'hl-line "#3e4446")
+
