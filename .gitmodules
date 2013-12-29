@@ -52,3 +52,6 @@
 [submodule "vim/bundle/CountJump"]
 	path = vim/bundle/CountJump
 	url = https://github.com/vim-scripts/CountJump
+[submodule "vim/bundle/vim-markdown"]
+	path = vim/bundle/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown
