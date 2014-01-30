@@ -11,7 +11,7 @@ let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 let g:solarized_contrast="high"
 let g:solarized_visibility="high"
-colorscheme solarized
+colorscheme default
 
 "command t config
 let g:CommandTMaxFiles=50000
@@ -27,6 +27,7 @@ filetype plugin on
 "powerline related updates
 set encoding=utf-8
 set laststatus=2
+set ts=2
 
 "xmledit
 au FileType xml setlocal foldmethod=syntax
