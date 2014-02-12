@@ -41,16 +41,6 @@
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
-;; load the ensime lisp code...
-(add-to-list 'load-path "/opt/ensime_2.10.0-RC3-0.9.8.2/elisp/")
-(require 'ensime)
-
-;; This step causes the ensime-mode to be started whenever
-;; scala-mode is started for a buffer. You may have to customize this
-;; step
-;; if you're not using the standard scala mode.
-(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
-
 ;; set color of the current line
 (global-hl-line-mode 1)
 (set-face-background 'hl-line "#3e4446")
