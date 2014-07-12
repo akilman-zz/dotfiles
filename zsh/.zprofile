@@ -33,3 +33,6 @@ if [[ -n ${INSIDE_EMACS} ]]; then
          prompt walters
              unsetopt zle
              fi
+
+# vim mode
+bindkey -v
