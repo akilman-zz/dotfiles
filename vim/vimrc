@@ -47,3 +47,6 @@ if has("unix")
   endif
 endif
 
+set expandtab
+set tabstop=4
+set shiftwidth=4
