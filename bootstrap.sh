@@ -4,12 +4,15 @@
 ## Bootstrap script for creating an environment
 ################################################
 
+cd ~
+
+if [ -e ~/dotfiles ]; then
+    rm -rf ~/dotfiles
+fi
+
 # clone dotfiles repo
-git clone --recursive https://github.com/thetwan/dotfiles
+git clone --recursive https://github.com/akilman/dotfiles dotfiles
 
 # create aliases
-ln -s ~/dotfiles/vim ~/.vim
-ln -s ~/dotfiles/vimrc ~/.vimrc
-ln -s ~/dotfiles/emacs ~/.emacs.d
-ln -s ~/dotfiles/emacs.el ~/.emacs
-ln -s ~/dotfiles/bash/bashrc ~/.bashrc
+ln -f -s ~/dotfiles/vim ~/.vim
+ln -f -s ~/dotfiles/vim/vimrc ~/.vimrc

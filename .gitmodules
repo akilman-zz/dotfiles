@@ -55,3 +55,6 @@
 [submodule "vim/bundle/vim-markdown"]
 	path = vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown
+[submodule "emacs"]
+	path = emacs
+	url = https://github.com/purcell/emacs.d
