@@ -13,6 +13,7 @@
     scala-mode2
     color-theme
     color-theme-solarized
+    markdown-mode
     ) "a list of packages to ensure are installed at launch.")
 
 (require 'cl)
