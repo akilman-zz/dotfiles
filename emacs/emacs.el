@@ -1,3 +1,6 @@
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("marmalade" . "http://marmalade-repo.org/packages/")
-                         ("melpa" . "http://melpa.milkbox.net/packages/")))
+(load "~/.emacs.d/my-noexternals.el")
+(load "~/.emacs.d/my-loadpackages.el")
+
+(require 'color-theme)
+(color-theme-initialize)
+(color-theme-solarized-light)
