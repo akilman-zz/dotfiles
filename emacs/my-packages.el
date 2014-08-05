@@ -14,6 +14,9 @@
     color-theme
     color-theme-solarized
     markdown-mode
+    org
+    gradle-mode
+    groovy-mode
     ) "a list of packages to ensure are installed at launch.")
 
 (require 'cl)
